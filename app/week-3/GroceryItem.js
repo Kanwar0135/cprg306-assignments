@@ -1,16 +1,17 @@
-import Item from "./GroceryItem";
-
-
-const Item = ({ name, quantity, category }) => {
+export default function Item({ name, quantity, category }) {
   return (
-    <li className="flex justify-between items-center p-4 mb-2 bg-white rounded-lg shadow border">
+    <li className="
+      flex justify-between items-center p-4 mb-2 rounded-lg border
+      bg-white text-gray-800 border-gray-200
+      dark:bg-gray-800 dark:text-gray-100 dark:border-gray-700
+    ">
       <div>
         <p className="font-semibold">{name}</p>
-        <p className="text-sm text-gray-500">{category}</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          {category}
+        </p>
       </div>
-      <span>Qty: {quantity}</span>
+      <span className="font-medium">Qty: {quantity}</span>
     </li>
   );
-};
-
-export default Item;
+}
