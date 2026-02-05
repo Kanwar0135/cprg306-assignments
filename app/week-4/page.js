@@ -4,13 +4,12 @@ export default function Page() {
   return (
     <main
       className="
-        min-h-screen
-        bg-red-50 text-red-900
-        dark:bg-black dark:text-cyan-200
-        p-6
+        min-h-screen p-8
+      bg-gray-100 text-gray-900
+      dark:bg-gray-900 dark:text-gray-100
       "
     >
-      <h1 className="text-3xl font-bold mb-6 text-center">
+      <h1 className="text-3xl font-bold mb-6">
         Shopping List
       </h1>
 

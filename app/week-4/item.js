@@ -2,9 +2,9 @@ export default function Item({ name, quantity, category }) {
   return (
     <li
       className="
-        p-4 rounded-lg shadow
-        bg-white text-purple-900
-        dark:bg-purple-900 dark:text-purple-100
+        flex justify-between items-center p-4 mb-2 rounded-lg border
+      bg-white text-gray-800 border-gray-200
+      dark:bg-gray-800 dark:text-gray-100 dark:border-gray-700
       "
     >
       <p className="font-semibold">{name}</p>
