@@ -1,5 +1,4 @@
 export default function Item({ name, quantity, category }) {
-
   return (
     <li
       className="
@@ -8,15 +7,11 @@ export default function Item({ name, quantity, category }) {
         dark:bg-gray-800 dark:text-gray-100 dark:border-gray-700
       "
     >
-
       <p className="font-semibold">{name}</p>
-
       <p>Quantity: {quantity}</p>
-
       <p className="capitalize text-sm opacity-80">
         Category: {category}
       </p>
-
     </li>
   );
 }

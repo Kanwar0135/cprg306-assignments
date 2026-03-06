@@ -27,11 +27,8 @@ export default function Page() {
       </h1>
 
       <div className="mx-auto w-full md:w-1/2 space-y-6">
-
         <NewItem onAddItem={handleAddItem} />
-
         <ItemList items={items} />
-
       </div>
     </main>
   );

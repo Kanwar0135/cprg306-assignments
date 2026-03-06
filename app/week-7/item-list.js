@@ -29,8 +29,8 @@ export default function ItemList({ items }) {
         <button
           onClick={() => setSortBy("name")}
           className={`px-4 py-2 rounded-md border ${sortBy === "name"
-            ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900"
-            : "bg-white dark:bg-gray-800"
+              ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900"
+              : "bg-white dark:bg-gray-800"
             }`}
         >
           Sort by Name
@@ -39,8 +39,8 @@ export default function ItemList({ items }) {
         <button
           onClick={() => setSortBy("category")}
           className={`px-4 py-2 rounded-md border ${sortBy === "category"
-            ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900"
-            : "bg-white dark:bg-gray-800"
+              ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900"
+              : "bg-white dark:bg-gray-800"
             }`}
         >
           Sort by Category
@@ -49,11 +49,9 @@ export default function ItemList({ items }) {
       </div>
 
       <ul className="space-y-2">
-
         {sortedItems.map(item => (
           <Item key={item.id} {...item} />
         ))}
-
       </ul>
 
     </div>
