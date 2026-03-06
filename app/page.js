@@ -99,6 +99,22 @@ export default function Page() {
           </p>
         </Link>
 
+        {/* Week 7 */}
+        <Link
+          href="/week-7"
+          className="
+            block p-6 rounded-xl shadow-md transition
+            bg-pink-600 text-white
+            hover:bg-pink-700
+            dark:bg-pink-500 dark:hover:bg-pink-400
+          "
+        >
+          <h2 className="text-xl font-semibold">Week 7</h2>
+          <p className="mt-1 text-white-100 dark:text-white-200">
+            Add new items
+          </p>
+        </Link>
+
       </div>
     </main>
   );
