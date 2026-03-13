@@ -115,6 +115,22 @@ export default function Page() {
           </p>
         </Link>
 
+        {/* Week 8 */}
+        <Link
+          href="/week-8"
+          className="
+            block p-6 rounded-xl shadow-md transition
+            bg-blue-600 text-white
+            hover:bg-blue-700
+            dark:bg-blue-500 dark:hover:bg-blue-400
+          "
+        >
+          <h2 className="text-xl font-semibold">Week 8</h2>
+          <p className="mt-1 text-white-100 dark:text-white-200">
+            fetch API
+          </p>
+        </Link>
+
       </div>
     </main>
   );
