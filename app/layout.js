@@ -1,18 +1,12 @@
-import "./globals.css";
-import { AuthContextProvider } from "./contexts/AuthContext";
-
-export const metadata = {
-  title: "CPRG306 Assignment",
-};
+import './globals.css'
+import { AuthProvider } from './contexts/AuthContext'
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <AuthContextProvider>
-          {children}
-        </AuthContextProvider>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
-  );
+  )
 }
