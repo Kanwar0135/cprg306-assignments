@@ -13,9 +13,9 @@ const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // ✅ IMPORTANT
 
-  const gitHubSignIn = async () => {
+  const gitHubSignIn = () => {
     const provider = new GithubAuthProvider();
     return signInWithPopup(auth, provider);
   };
@@ -27,7 +27,7 @@ export const AuthContextProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-      setLoading(false);
+      setLoading(false); // ✅ IMPORTANT
     });
 
     return () => unsubscribe();
@@ -40,4 +40,6 @@ export const AuthContextProvider = ({ children }) => {
   );
 };
 
-export const useUserAuth = () => useContext(AuthContext);
+export const useUserAuth = () => {
+  return useContext(AuthContext);
+};
